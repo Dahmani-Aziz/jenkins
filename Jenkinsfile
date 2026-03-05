@@ -18,7 +18,9 @@ pipeline {
 
         stage('Compile Stage') {
             steps {
-                sh 'mvn clean compile'
+                dir('my-app') {
+                    sh 'mvn clean compile'
+                }
             }
         }
     }
