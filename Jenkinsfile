@@ -16,6 +16,7 @@ pipeline {
 
         stage('Compile') {
             steps {
+<<<<<<< HEAD
                 dir('my-app') {   // go into the folder with pom.xml
                     sh 'mvn clean compile'
                 }
@@ -27,6 +28,11 @@ pipeline {
                 dir('my-app') {
                     sh 'mvn test'
                 }
+=======
+                dir('my-app') {
+                    sh 'mvn clean compile'
+                }
+>>>>>>> 383de24829dfd2a052f7b8a374f21110cd3d2c09
             }
         }
     }
